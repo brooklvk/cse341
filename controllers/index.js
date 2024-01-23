@@ -1,10 +1,11 @@
+const mongodb = require('../database/connection');
 
-const name = (req, res, next) => {
-    res.json('Rusty the dog');
+const getData = async (req, res, next) => {
+  const result = await mongodb.getDb().db().collection('contacts').find();
+  result.toArray().then((lists) => {
+    res.setHeader('Content-Type', 'application/json');
+    res.status(200).json(lists); 
+  });
 };
 
-const name2 = (req, res, next) => {
-    res.json('Roxie the dog');
-}
-
-module.exports = { name, name2 };
+module.exports = { getData };

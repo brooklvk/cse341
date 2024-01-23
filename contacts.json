@@ -1,0 +1,24 @@
+{
+    "contact": {
+        "firstName":"Rusty",
+        "lastName":"Dog",
+        "email":"rusty@dog.com",
+        "favoriteColor":"red",
+        "birthday":"01-01-2015"
+    },
+    "contact2": {
+        "firstName":"Roxie",
+        "lastName":"Dog",
+        "email":"roxie@dog.com",
+        "favoriteColor":"black",
+        "birthday":"01-01-2015"
+    },
+    "contact3": {
+        "firstName":"Brandy",
+        "lastName":"Dog",
+        "email":"brandy@dog.com",
+        "favoriteColor":"pink",
+        "birthday":"01-01-2023"
+    }
+
+}
