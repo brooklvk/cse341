@@ -8,7 +8,19 @@ const mongodb = require('./database/connection');
 
 app.use('/', require('./routes'));
 
-app.listen(port, () => {
-    console.log(`Server running on port ${port}.`)
+mongodb.initDb((err, db) => {
+    if (err) {
+        console.log('Error connecting to the database');
+        console.log(err);
+      } else {
+        console.log('Connected to the database');
+        
+        app.listen(port, () => {
+            console.log(`Server running on port ${port}.`)
+        });
+      }
 });
 
+//call to getDb now, not before initDb^ 
+
+app.get(mongodb);
