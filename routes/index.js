@@ -10,6 +10,8 @@ router.get('/', (req, res) => {
 
 router.get('/', myController.getData);
 
+//new get route, get 1 contact where id matches id in query 
+
 
 // This works, html page shows contacts from json file.
 // router.get('/contacts', (req, res) => {

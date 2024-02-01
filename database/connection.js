@@ -13,7 +13,10 @@ const initDb = (callback) => {
   
   MongoClient.connect(process.env.MONGODB_URI)
     .then((client) => {
+      client.s.namespace.collection = "contacts"; // I added this 
       database = client;
+      //console.log(client); // and this 
+      
       callback(null, database);
     })
     .catch((err) => {

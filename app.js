@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./database/connection');
 
+app.use(express.static('public'));
+app.use(express.static('js'));
 app.use('/', require('./routes'));
 
 mongodb.initDb((err, db) => {
