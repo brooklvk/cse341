@@ -1,5 +1,8 @@
-
-GET http://localhost:8080/contacts HTTP/1.1
-
-GET http://localhost:8080/contact HTTP/1.1
-
+###
+GET http://localhost:8080/contacts 
+###
+GET http://localhost:8080/contact/65bc32b28f06c05089a23df5
+###
+GET https://cse341-lesson1-75nj.onrender.com/contacts 
+###
+GET https://cse341-lesson1-75nj.onrender.com/contact/65bc32b28f06c05089a23df5

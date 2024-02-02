@@ -1,4 +1,5 @@
 const mongodb = require('../database/connection');
+const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res, next) => {
   const result = await mongodb.getDb().db().collection('contacts').find();
