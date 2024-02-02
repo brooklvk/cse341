@@ -19,5 +19,12 @@
         "email":"brandy@dog.com",
         "favoriteColor":"pink",
         "birthday":"01-01-2023"
+    },
+    "contact4": {
+        "firstName":"Penelope",
+        "lastName":"Dog",
+        "email":"penelope@dog.com",
+        "favoriteColor":"yellow",
+        "birthday":"01-01-2013"
     }
 }

@@ -1,11 +1,12 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 8080;
 
-const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./database/connection');
 
+app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(express.static('js'));
 app.use('/', require('./routes'));
