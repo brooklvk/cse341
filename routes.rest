@@ -1,12 +1,15 @@
 ###
+# GET on LOCAL 
 GET http://localhost:8080/contacts 
 ###
 GET http://localhost:8080/contacts/65bc32b28f06c05089a23df5
 ###
+# GET on RENDER 
 GET https://cse341-lesson1-75nj.onrender.com/contacts 
 ###
 GET https://cse341-lesson1-75nj.onrender.com/contacts/65bc32b28f06c05089a23df5
 ###
+# POST, PUT, and DELETE on LOCAL 
 POST http://localhost:8080/contacts 
 Content-Type: application/json
 
@@ -18,7 +21,7 @@ Content-Type: application/json
         "birthday":"01-01-2013"
 }
 ###
-PUT http://localhost:8080/contacts/65bc4d7d42bd08fe93572e89
+PUT http://localhost:8080/contacts/65bc50690d836ab5cef5727f
 Content-Type: application/json
 
 {
@@ -29,5 +32,30 @@ Content-Type: application/json
         "birthday":"01-01-2014"
 }
 ###
-DELETE http://localhost:8080/contacts/65bc4d7d42bd08fe93572e89
+DELETE http://localhost:8080/contacts/65bc4fa70d836ab5cef5727e
+###
+# POST, PUT, and DELETE on RENDER 
+POST https://cse341-lesson1-75nj.onrender.com/contacts
+Content-Type: application/json
+
+{
+    "firstName":"Penelope",
+        "lastName":"Dog",
+        "email":"penelope@dog.com",
+        "favoriteColor":"yellow",
+        "birthday":"01-01-2013"
+}
+###
+PUT https://cse341-lesson1-75nj.onrender.com/contacts/65bc50690d836ab5cef5727f
+Content-Type: application/json
+
+{
+    "firstName":"Penelope",
+        "lastName":"Dog",
+        "email":"penelopethedog@dog.com",
+        "favoriteColor":"yelloworange",
+        "birthday":"01-01-2014"
+}
+###
+DELETE https://cse341-lesson1-75nj.onrender.com/contacts/65bc4fa70d836ab5cef5727e
 ###
