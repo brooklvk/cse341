@@ -4,14 +4,8 @@ const path = require('path');
 
 const myController = require('../controllers');
 
-router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'));
-});
-
-router.get('/', myController.getData);
-
-//new get route, get 1 contact where id matches id in query 
-
+router.get('/contacts', myController.getAll);
+router.get('/contact', myController.getOne);
 
 // This works, html page shows contacts from json file.
 // router.get('/contacts', (req, res) => {
