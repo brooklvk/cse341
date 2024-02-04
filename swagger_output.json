@@ -2,10 +2,10 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0.0",
-    "title": "REST API",
-    "description": ""
+    "title": "Your API Documentation",
+    "description": "Description of your API"
   },
-  "host": "localhost:8080",
+  "host": "https://cse341-lesson1-75nj.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
