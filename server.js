@@ -11,7 +11,7 @@ const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./database/connection');
 
 const corsOptions = {
-  origin: 'cse341-lesson1-75nj.onrender.com', // http://localhost:8080
+  origin: 'http://localhost:8080', // https://cse341-lesson1-75nj.onrender.com
   methods: 'GET,PUT,POST,DELETE',
   preflightContinue: false,
   optionsSuccessStatus: 204,
@@ -48,7 +48,7 @@ const doc = {
     title: "Your API Documentation",
     description: "Description of your API",
   },
-  host: "cse341-lesson1-75nj.onrender.com", // "localhost:8080"
+  host: "localhost:8080", // "cse341-lesson1-75nj.onrender.com"
   basePath: "/",
 };
 

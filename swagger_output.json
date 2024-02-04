@@ -5,10 +5,10 @@
     "title": "Your API Documentation",
     "description": "Description of your API"
   },
-  "host": "cse341-lesson1-75nj.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/contacts": {
