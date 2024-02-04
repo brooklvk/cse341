@@ -21,7 +21,7 @@ Content-Type: application/json
         "birthday":"01-01-2013"
 }
 ###
-PUT http://localhost:8080/contacts/65bc50690d836ab5cef5727f
+PUT http://localhost:8080/contacts/65bc520d0d836ab5cef57280
 Content-Type: application/json
 
 {
@@ -32,7 +32,7 @@ Content-Type: application/json
         "birthday":"01-01-2014"
 }
 ###
-DELETE http://localhost:8080/contacts/65bc4fa70d836ab5cef5727e
+DELETE http://localhost:8080/contacts/65bc50690d836ab5cef5727f
 ###
 # POST, PUT, and DELETE on RENDER 
 POST https://cse341-lesson1-75nj.onrender.com/contacts
@@ -46,7 +46,7 @@ Content-Type: application/json
         "birthday":"01-01-2013"
 }
 ###
-PUT https://cse341-lesson1-75nj.onrender.com/contacts/65bc50690d836ab5cef5727f
+PUT https://cse341-lesson1-75nj.onrender.com/contacts/65bc525006584094cb5caf6c
 Content-Type: application/json
 
 {
@@ -57,5 +57,5 @@ Content-Type: application/json
         "birthday":"01-01-2014"
 }
 ###
-DELETE https://cse341-lesson1-75nj.onrender.com/contacts/65bc4fa70d836ab5cef5727e
+DELETE https://cse341-lesson1-75nj.onrender.com/contacts/65bc520d0d836ab5cef57280
 ###
